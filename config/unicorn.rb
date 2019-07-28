@@ -18,6 +18,7 @@ stderr_path "#{app_path}/log/unicorn.stderr.log"
 
 stdout_path "#{app_path}/log/unicorn.stdout.log"
 
+listen "#{app_path}/tmp/sockets/unicorn.sock"
 
 timeout 60
 
