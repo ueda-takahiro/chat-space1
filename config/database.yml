@@ -52,3 +52,4 @@ production:
   database: chat-space1_production
   username: chat-space1
   password: <%= ENV['CHAT-SPACE1_DATABASE_PASSWORD'] %>
+
