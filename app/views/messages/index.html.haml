@@ -3,7 +3,7 @@
         
   
   
-  .chat-main
+  .chat-main{data: {id: @group.id}}
     .chat-main__main-header
       .chat-main__main-header__left-box
         .chat-main__main-header__left-box__current-group
@@ -12,8 +12,8 @@
           Members :
           - @group.users.each do |user|
             = user.name
-      .chat-main__main-header__edit-btn
-        = link_to edit_group_path(@group) do
+      = link_to edit_group_path(@group) do
+        .chat-main__main-header__edit-btn
           EDIT
 
     .messages
